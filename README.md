@@ -5,7 +5,7 @@ A new Flutter project.
 
 ## Getting Started
 
-Step 1: Create a new Flutter project:
+*Step 1: Create a new Flutter project:*
 
 ```bash
 flutter create --empty games3d 
@@ -544,7 +544,6 @@ class ThirdPersonCamera extends CameraComponent3D
 final Vector3 _positionOffset = Vector3(-4, 6, -4);
 const double _cameraRotationSpeed = 6.0;
 const double _cameraLinearSpeed = 12.0;
-
 
 
 ```
