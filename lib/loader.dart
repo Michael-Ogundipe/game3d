@@ -1,0 +1,36 @@
+import 'package:flame_3d/model.dart';
+import 'package:flame_3d/parser.dart';
+
+class Loader {
+  Loader._();
+
+  static late Models models;
+
+  static Future<void> init() async {
+    models = await Models.load();
+  }
+}
+
+class Models {
+  final Model rogue;
+  final Model floor;
+  final List<Model> walls;
+
+  Models({
+    required this.rogue,
+    required this.floor,
+    required this.walls,
+  });
+
+  static Future<Models> load() async {
+    return Models(
+      rogue: await ModelParser.parse('objects/rogue.glb'),
+      floor: await ModelParser.parse('objects/floor.gltf'),
+      walls: [
+        await ModelParser.parse('objects/wall_0.gltf'),
+        await ModelParser.parse('objects/wall_1.gltf'),
+        await ModelParser.parse('objects/wall_2.gltf'),
+      ],
+    );
+  }
+}
