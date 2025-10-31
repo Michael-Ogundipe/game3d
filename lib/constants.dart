@@ -6,11 +6,8 @@ const double worldSize = 16.0;
 final Vector3 up = Vector3(0, 1, 0);
 
 
-
 // Utilities
-
 final _r = Random();
-
 
 int randomInt(int min, int max) {
   return min + _r.nextInt(max - min);
