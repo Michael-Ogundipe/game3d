@@ -5,7 +5,7 @@ A new Flutter project.
 
 ## Getting Started
 
-*Step 1: Create a new Flutter project:*
+**Step 1: Create a new Flutter project:**
 
 ```bash
 flutter create --empty games3d 
